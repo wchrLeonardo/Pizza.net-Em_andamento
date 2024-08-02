@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs')%>
+<%- include('partials/navbar.ejs')%>
+<table class="table table-striped table-dark table-bordered border-4" >
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">#</th>
+        <th scope="col" class="text-center">Número do Pedido</th>
+        <th scope="col" class="text-center">Preço</th>
+        <th scope="col" class="text-center">Hora do Pedido</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+        <%pedidos.forEach(pedido => { %>
+      <tr class="table-light text-center" style="border-width: 6px;">
+        <th scope="row"><img src="<%= pedido.img%>" height="50px" width="100px" alt=""></th>
+        <td class="align-middle" style="color: black;"><b><%= pedido.nmr_pedido%></b></td>
+        <td class="align-middle" style="color: black;"><%= pedido.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
+        <td class="align-middle" style="color: black;"><b><%= horaPedido%></b></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <div class="image-coke">
+    <img class="coca" src="./imgs/coca1.png" height="900px" alt="">
+</div>
+<div class="image-water">
+    <img class="agua" src="./imgs/agua.png" width="1500px"alt="">
+</div>
+<%- include('partials/footer.ejs')%>

@@ -1,0 +1,63 @@
+    <%- include('partials/header.ejs')%>
+	<div class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span style="font-size: 25px;">Entrar</span><span style="font-size:23px;">Cadastrar</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3" style="color: #ffffff; font-family:Arial, Helvetica, sans-serif"><strong>Conecte-se</strong></h4>
+											<div class="form-group">
+												<input id="logEmail" type="email" class="form-style" placeholder="leo@gmail.com">
+												<i class="input-icon uil uil-at"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input id="logSenha" type="password" class="form-style" placeholder="1234">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+											<button type="submit" class="btn mt-4" onclick="logar()">Login</button>
+                      <p class="mb-0 mt-4 text-center"><a href="/login" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-3 pb-3" style="color: #ffffff; font-family:Arial, Helvetica, sans-serif; margin-top: 17.5%;"><strong>Cadastre-se</strong></h4>
+											<div class="form-group">
+												<input type="text" id="fullname" class="form-style" placeholder="Full Name">
+												<i class="input-icon uil uil-user"></i>
+											</div>	
+											<div class="form-group mt-2">
+												<input id="number" type="tel" class="form-style" placeholder="Phone Number">
+												<i class="input-icon uil uil-phone"></i>
+											</div>	
+                      <div class="form-group mt-2">
+												<input id="email" type="email" class="form-style" placeholder="Email">
+												<i class="input-icon uil uil-at"></i>
+											</div>
+											<div class="form-group mt-2">
+												<input id="password" type="password" class="form-style" placeholder="Password">
+												<i class="input-icon uil uil-lock-alt"></i>
+											</div>
+										<button type="submit" class="btn mt-4" onclick="cadastrarUsuario()">Register</button>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+</body>
+<script src="./javascript/main.js"></script>
+</script>
+</html>

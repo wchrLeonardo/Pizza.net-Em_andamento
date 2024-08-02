@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs')%>
+<%- include('partials/navbar.ejs')%>
+
+<div class="cards-elements">
+  <% pizzas.forEach(pizza => { %>
+    <div class="card bg-dark" style="width: 21rem;">
+        <img src="<%= pizza.img %>" height="250px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><%=pizza.sabor%></h5>
+          <p class="card-text"><b><%=pizza.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></b>
+            <br><%=pizza.ingredientes.join(', ')%></p>
+          <a href="/pedidos" class="btn btn-primary"><b>Fazer Pedido</b></a>
+        </div>
+      </div>
+      <% })%>
+    </div>
+    <!-- <div class="grid-container">
+      <div class="item col1">
+        Desfrute de pizzas autênticas a partir do conforto da sua casa! Nossa pizzaria online combina tradição italiana com conveniência moderna. Explore nosso menu diversificado e peça suas favoritas com facilidade.</div>
+      <div class="item col2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dignissimos sunt debitis, sint ullam ad asperiores? Optio a, reprehenderit eos totam perferendis rem mollitia est quam veniam ipsa maiores? Ex dolores, iusto fugiat doloribus, et labore blanditiis officia impedit voluptas corporis animi facilis, quasi obcaecati. Natus ratione expedita ab officia.</div>
+      <div class="item col3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate corporis suscipit tenetur itaque error, qui totam possimus. Temporibus distinctio exercitationem autem vitae quo reiciendis odio, aliquid rem veniam excepturi sequi natus molestias cupiditate laborum repellendus, voluptas dolores aut adipisci aspernatur expedita dolorem, nobis delectus earum! Sequi quod magni accusantium corporis.</div>
+    </div> --> 
+    <div class="image-coke">
+      <img class="coca" src="./imgs/coca1.png" height="900px" alt="">
+  </div>
+  <div class="image-water">
+      <img class="agua" src="./imgs/agua.png" width="1500px"alt="">
+  </div>
+<%- include('partials/footer.ejs')%>
