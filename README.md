@@ -7,4 +7,5 @@
 - Atualização do Design
 - Lapidação do código
 - Rotas dinâmicas para usuário e proprietário
+- Automatização de vendas
 - Versão Mobile
